@@ -1,0 +1,19 @@
+Math
+    Prime- Sieve, Segmented Sieve
+    GCD- Euclid's Algo
+    LCM= (n*m)/gcd(n,m)
+    Fast Exponentiation
+    Modular Arithmentic
+    Pigeon Hole Principle
+    Inclusion-Exclusion Principle
+    Catalan Number
+    Factorial of Number (using modular arithmentic   212! using %10^9+7)
+
+    CRT
+    Lucas Therorem
+    FL
+    Probability
+
+Pointers
+    Address Typecasting
+    Function Pointers
