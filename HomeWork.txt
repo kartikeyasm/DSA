@@ -1,0 +1,11 @@
+https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+
+https://codeforces.com/blog/entry/72527
+
+https://www.naukri.com/code360/problems/modular-exponentiation_1082146?interviewProblemRedirection=true&search=stair&attempt_status=NOT_ATTEMPTED&count=25&page=1&sort_entity=order&sort_order=ASC&leftPanelTabValue=PROBLEM
+
+https://www.naukri.com/code360/guided-paths/basics-of-c/content/118785/offering/1381141
+
+jagged array
+
+https://www.freecodecamp.org/news/learn-react-course/

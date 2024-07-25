@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<queue>
+#include<stack>
 using namespace std;
 
 class Node{
@@ -66,6 +67,97 @@ void postOrderTraversal(Node* root){
     postOrderTraversal(root->right);
     cout<<root->data<<" , ";
 }
+
+
+
+//Iterative
+
+vector<int> preOrder(Node* root){
+    vector<int> ans;
+    if(root==NULL){
+        return ans;
+    }
+    stack<Node*> s;
+    s.push(root);
+    while(!s.empty()){
+        Node* temp=s.top();
+        s.pop();
+        ans.push_back(temp->data);
+        if(temp->left){
+            s.push(temp->left);
+        }
+        if(temp->left){
+            s.push(temp->left);
+        }
+    }
+    return ans;
+    /*
+    stack<TreeNode*> s;
+    vector<int> ans;
+    while(!s.empty() || root){
+        while(root){
+            ans.push_back(root->val);
+            s.push(root);
+            root=rooe->left;
+        }
+        root=s.top();
+        s.pop();
+        root=root->right;
+    }
+    return ans;
+    */
+
+}
+
+
+vector<int> inOrder(Node* root){
+    stack<Node*> s;
+    vector<int> ans;
+    while(!s.empty() || root){
+        while(root){
+            s.push(root);
+            root=root->left;
+        }
+        root=s.top();
+        ans.push_back(root->data);
+
+        s.pop();
+        root=root->right;
+    }
+}
+
+
+vector<int> postOrder(Node* root){
+    /*
+    vector<int> ans;
+    stack<TreeNode*> s;
+    TreeNode* lastVisited=NULL;
+    while(!s.empty() || root){
+        while(root){
+            s.push(root);
+            root=root->left;
+        }
+        TreeNode* temp=s.top();
+        if(!temp->left || temp->right==lastVisited){
+            ans.push_back(temp->val);
+            s.pop();
+            lastVisited=temp;
+        }
+        else{
+            roor=temp->right;
+        }
+    }
+    return ans;
+    */
+}
+
+
+
+
+
+
+
+
 
 
 int main(){
