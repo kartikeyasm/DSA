@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//Time Complexity => O(4^n^2)    //4 moves for every n*n block
+//Space Complexity=> O(n*n)      //max number of functions calling in a call stack can be n*n
 
 
 bool isSafe(vector<vector<int>> &m, int n, vector<vector<int>> visited, int x, int y){
@@ -86,6 +88,7 @@ int main(){
         cout<<s<<endl;
     }    
     cout<<endl;
+    cout<<ans.size();
 
 
     return 0;
